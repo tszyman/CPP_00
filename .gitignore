@@ -1,1 +1,9 @@
 /CPP_00.code-workspace
+CPP_00_subject.pdf
+ex00/megaphone
+
+-- VSCode files --
+.vscode/*
+
+-- output files --
+*.o
