@@ -10,7 +10,7 @@ public:
 	~PhoneBook(void);
 
 	void			addContact(const Contact& contact);
-	const Contact&	getContact(int index) const;
+	const Contact*	getContact(int index) const;
 	int				getStoredContactsCount(void) const;
 
 	void			displayContactsSummary(void) const;
@@ -19,7 +19,7 @@ public:
 private:
 	Contact _contacts[8];
 	int		_count;
-	int		_oldestindex;
+	int		_oldestIndex;
 
 	static	std::string	_formatField(const std::string& str);
 };
