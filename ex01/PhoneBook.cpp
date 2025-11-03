@@ -74,7 +74,7 @@ void PhoneBook::displayContactDetails(int index) const
 std::string PhoneBook::_formatField(const std::string& str)
 {
 	if (str.length() > 10)
-		return str.substr(0,7) + "...";
+		return str.substr(0,9) + ".";
 	else
 		return str;
 }
