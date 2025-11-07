@@ -38,11 +38,11 @@ void PhoneBook::displayContactsSummary(void) const
 {
 	int	i;
 
-	std::cout << "     Index|First Name| Last Name|  Nickname|\n";
+	std::cout << "|     Index|First Name| Last Name|  Nickname|\n";
 	i = 0;
 	while (i < _count)
 	{
-		std::cout << std::right << std::setw(10) << i << '|'
+		std::cout << '|' << std::right << std::setw(10) << i << '|'
 				<< std::right << std::setw(10) << _formatField(_contacts[i].getFirstName()) << '|'
 				<< std::right << std::setw(10) << _formatField(_contacts[i].getLastName()) << '|'
 				<< std::right << std::setw(10) << _formatField(_contacts[i].getNickName()) << "|\n";

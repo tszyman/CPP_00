@@ -89,6 +89,8 @@ int	main(void)
 				continue;
 			}
 		}
+		else
+			std::cout << "Unknown command! (only ADD, SEARCH, EXIT allowed)\n";
 	}
 	std::cout << "Thank you! See you next time!\n";
 	return (0);
